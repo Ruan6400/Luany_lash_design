@@ -1,0 +1,64 @@
+body{
+    margin: 0 auto;
+}
+header{
+    background-color: #eee;
+    height: 75px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header ul,input{
+    display: none;
+}
+header label{
+    display: block;
+    width: 100px;
+    height: 25px;
+    background-color: aquamarine;
+    text-align: center;
+    border-radius: 30px;
+    user-select: none;
+}
+header label:hover{
+    background-color: rgb(158, 226, 203);
+}
+header label:active{
+    background-color: rgb(67, 187, 147);
+}
+header input:checked+ul{
+    display: block;
+    position: absolute;
+    top:50px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+main p,h1{
+    max-width: 300px;
+}
+main div *{
+    text-align: center;
+}
+main>div>button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section{
+    text-align: center;
+}
+#map{
+    max-width: 200px;
+    height: 200px;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
